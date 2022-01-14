@@ -20,7 +20,7 @@ namespace BrandensMod.Items.Tools.Axes.DebugAxe
 			item.height = 56;
 			item.useTime = 1;
 			item.useAnimation = 5;
-			item.axe = 250;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
+			item.axe = 150;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 6;
 			item.value = 10000;
