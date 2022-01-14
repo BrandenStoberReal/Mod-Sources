@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace BrandensMod.Items.Weapons.Swords.BloodSword
 {
-	public class DebugSword : ModItem
+	public class BloodSword : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{

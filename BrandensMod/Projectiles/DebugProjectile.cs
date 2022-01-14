@@ -16,9 +16,10 @@ namespace BrandensMod.Projectiles //where it's stored, replace Mod with the name
             projectile.aiStyle = 0; //projectile moves in a straight line
             projectile.friendly = true; //player projectile
             projectile.ranged = true; //ranged projectile
-            projectile.timeLeft = 600; //lasts for 600 frames/ticks. Terraria runs at 60FPS, so it lasts 10 seconds.
+            projectile.timeLeft = 360; //lasts for 600 frames/ticks. Terraria runs at 60FPS, so it lasts 10 seconds.
             projectile.tileCollide = false; //Go through wall
             aiType = ProjectileID.EyeBeam; //This clones the exact AI of the vanilla projectile Bullet.
+            projectile.penetrate = 10;
         }
 
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
