@@ -11,8 +11,8 @@ namespace BrandensMod.Projectiles //where it's stored, replace Mod with the name
     {
         public override void SetDefaults()
         {
-            projectile.width = 48; //sprite is 2 pixels wide
-            projectile.height = 8; //sprite is 20 pixels tall
+            projectile.width = 48; //sprite is 48 pixels wide
+            projectile.height = 8; //sprite is 8 pixels tall
             projectile.aiStyle = 0; //projectile moves in a straight line
             projectile.friendly = true; //player projectile
             projectile.ranged = true; //ranged projectile
@@ -23,7 +23,7 @@ namespace BrandensMod.Projectiles //where it's stored, replace Mod with the name
 
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
-            target.AddBuff(BuffID.ShadowFlame, 600);
+            target.AddBuff(BuffID.ShadowFlame, damage * 100);
             Player player = Main.player[projectile.owner];
             if (player.statLife < player.statLifeMax2)
             {

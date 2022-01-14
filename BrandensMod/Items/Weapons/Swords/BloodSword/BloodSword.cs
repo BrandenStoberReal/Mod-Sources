@@ -52,7 +52,6 @@ namespace BrandensMod.Items.Weapons.Swords.BloodSword
 			{
 				player.statLife = player.statLifeMax2; // Prevent "over healing"
 			}
-			target.AddBuff(BuffID.OnFire, 60);
 		}
 	}
 }
