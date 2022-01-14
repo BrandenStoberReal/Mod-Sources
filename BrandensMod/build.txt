@@ -1,0 +1,3 @@
+displayName = Branden's Mod
+author = Branden
+version = 0.1
